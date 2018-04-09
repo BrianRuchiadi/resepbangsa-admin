@@ -1,29 +1,39 @@
-header {
-    width: 100%;
-    height: 60px;
-    background-color: #F6F7EB;
+body{
+    font-family: $primFont;
+    font-size:14px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 10px;
 }
 
 .wrapper {
     display: block;
-    font-size: 0px;
     .side-navigation {
         display: inline-block;
-        width: 15vw;
-        height: auto;
-        vertical-align: top;
-        background-color: #E94F37;
+        width: 15%;
+        height: 100vh;
+        background-color: $black;
+        text-align:center;
         .logo-area {
-            width: 100%;
             height: 60px;
-            background-color: #F6F7EB;
+            background-color: $headerColor;
         }
         ul {
-            font-size: 12px;
             li {
                 padding: 10px;
-                &:hover {
-                    background-color: white;
+                margin: 20px 0;
+                &:active, &:hover {
+                    border-left:2px solid $gray;
+                }
+                a{
+                    color:$gray;
+                    word-spacing: 2rem;
+                    letter-spacing: 2px;
+                    font-size:18px;
+                    &:active, &:hover{
+                        background-color:transparent;
+                    }
                 }
             }
         }
@@ -31,9 +41,36 @@ header {
     // content area
     .content-area {
         display: inline-block;
-        width: 85vw;
+        width: 85%;
         height: auto;
-        font-size: 12px;
+        margin-left: -4px;
         vertical-align: top;
+        .content-header {
+            width: 100%;
+            height: 60px;
+            background-color: $headerColor;
+        }
+        .content-body {
+            padding: 1rem;
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@include breakpoint(mobileonly){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
+}
+
+@include breakpoint(phablet){
+    .mobile-nav{
+        display: none;
     }
 }

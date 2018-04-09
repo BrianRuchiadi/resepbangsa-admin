@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
-// Reset
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
 @import "helpers/reset";
 // Variables
 @import "variables";
@@ -11,3 +12,5 @@
 @import "helpers/base.desktop";
 @import "helpers/base.mobile";
 @import "helpers/typography";
+@import "pages/food";
+@import "pages/index";

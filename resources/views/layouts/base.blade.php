@@ -18,16 +18,21 @@
         <div class="side-navigation">
             <div class="logo-area">
             </div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/admins">Admin</a></li>
-                <li><a href="/foods">Foods</a></li>
+            <ul class="desktop-nav">
+                <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="/admins"><i class="fa fa-users"></i> Admins</a></li>
+                <li><a href="/foods"><i class="	fa fa-file-text"></i> Foods</a></li>
+            </ul>
+            <ul class="mobile-nav">
+                <li><a href="/"><i class="fa fa-home"></i></a></li>
+                <li><a href="/admins"><i class="fa fa-users"></i></a></li>
+                <li><a href="/foods"><i class="	fa fa-file-text"></i></a></li>
             </ul>
         </div>
         <div class="content-area">
-            <header>
-            </header>
-            <div class="content">  
+            <div class="content-header">
+            </div>
+            <div class="content-body">
                 @yield('content')
             </div>
         </div>

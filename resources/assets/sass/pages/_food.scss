@@ -1,0 +1,40 @@
+.options-wrapper{
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint(mobileonly){
+        flex-direction: column;
+        height: 80px;
+    }
+    .search-container{
+        width:400px;
+        @include breakpoint(mobileonly){
+            width:auto;
+        }
+        button{
+            border:0;
+            background-color: transparent;
+        }
+        input[type=text] {
+            width: 200px;
+            padding: 5px;
+            border-radius: 5px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+
+        }
+        input[type=text]:focus {
+            width: 80%;
+        }
+    }
+}
+
+.food-list{
+    margin-top: 20px;
+    .button-groups{
+        position: absolute;
+        top:20%;
+        right:5%;
+    }
+}
+
+

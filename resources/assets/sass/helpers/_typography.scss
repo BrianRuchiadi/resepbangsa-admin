@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Avenir Book';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Avenir/AvenirLTStd-Book.eot');
+    src: url('../fonts/Avenir/AvenirLTStd-Book.eot'),
+         url('../fonts/Avenir/AvenirLTStd-Book.ttf') format('truetype'),
+         url('../fonts/Avenir/AvenirLTStd-Book.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Avenir Heavy';
+    font-style: bold;
+    font-weight: 500;
+    src: url('../fonts/Avenir/AvenirLTStd-Heavy.eot');
+    src: url('../fonts/Avenir/AvenirLTStd-Heavy.eot'),
+         url('../fonts/Avenir/AvenirLTStd-Heavy.ttf') format('truetype'),
+         url('../fonts/Avenir/AvenirLTStd-Heavy.woff') format('woff');
+}

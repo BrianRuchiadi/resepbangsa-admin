@@ -5,5 +5,6 @@
 @endsection
 
 @section('content')
-    This is index.blade.php
+    <h3>Home</h3>
+    <hr/>
 @endsection
